@@ -1,0 +1,155 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: 'Outfit', sans-serif;  /* Fuente principal */
+  background-color: #f4f4f4;       /* Color de fondo */
+  display: flex;
+  align-items: center;             /* Centrar verticalmente */
+  justify-content: center;         /* Centrar horizontalmente */
+  height: 100vh;                   /* Ocupar toda la altura de la ventana */
+  background-image: url('assets/bg-guess-the-word.png');
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-size: cover; /* O ajusta según tus necesidades */
+
+}
+h3 {
+  background: linear-gradient(to right, #7429C6, #672171, #C951E7);
+  -webkit-background-clip: text;
+  color: transparent;
+  font-size: 2rem;
+  display: inline-block;
+  text-decoration: none;
+}
+.container{
+  border: none;
+  background-color: rgba(3, 6, 22, 0.9);
+  border-radius: 10px;
+  min-width: 450px;
+  padding: 1rem;
+  display: grid;
+  place-items: center;
+  /* Quitar los puntos blancos en chrome */
+  backface-visibility: hidden;
+  transform: translateZ(0);
+  user-select: none;
+}
+.container-top {
+  width: 100%;
+  display: grid;
+  place-items: center;
+}
+.container-top-ramdon_word {
+  border: none;
+  background-color: #4A5567;
+  border-radius: 5px;
+  padding: 1rem;
+  width:90% ;
+  text-align: center;
+  margin-top: 1rem;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  color: #97A3B6;
+  font-size: 2rem;
+  letter-spacing: 1rem;
+}
+.container-mid {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 90%;
+  padding: 1rem;
+  margin: 1rem auto;
+  font-size: 0.75rem;
+}
+.container-mid-tries {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:#4A5567;
+}
+
+.container-mid-tries-radio {
+  margin-left: 0.8rem ;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}  
+.container-mid-tries-radio input{
+  margin-right: 0.5rem;
+  transform: scale(0.625);
+}
+.container-mid-mistakes {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color:#4A5567;
+}
+.container-mid-mistakes-words {
+  margin-left: 0.8rem ;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  color: #97A3B6;
+}
+.container-mid-mistakes-words p{
+  margin-right: 0.5rem;
+  font-size: 1rem;
+  font-weight: bold;
+}
+.container-bottom {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem;
+}
+.container-bottom-word {
+  width: 75%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  margin: 1.5rem;
+  color: #97A3B6;
+  width: 100%;
+}
+.letter-space {
+  display: inline-block;
+  width: 50px; /* Ajusta el ancho según sea necesario */
+  height: 50px; /* Ajusta la altura según sea necesario */
+  margin-right: 5px; /* Ajusta el espacio entre los espacios */
+  border: 2px solid #4A5567;
+  border-radius: 10px;
+  background-color: rgba(3, 6, 22, 0.9);
+  color: #fff;
+  font-size: 1.25rem;
+  text-align: center;
+}
+
+.container-bottom-btn {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  padding: 1rem;
+}
+.container-bottom-btn button{
+  min-width: 130px;
+  border-radius: 10px;
+  background-color: #C951E7;
+  border: none;
+  color: #fff;
+  font-size: 0.875rem;
+  min-height: 45px;
+  box-shadow: 0px 4px 6px rgba(103, 33, 113, 0.4); /* Sombra debajo con opacidad */
+  transition: box-shadow 0.3s ease; /* Agregué una transición suave */
+  cursor: pointer;
+}
+.container-bottom-btn-shadow{
+  min-height: 50px;
+  background-color: #672171;
+  border-radius: 10px;
+}

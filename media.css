@@ -1,0 +1,47 @@
+
+@media screen and (max-width: 600px) {
+    body {
+      background-size: auto; /* Ajusta el tamaño de fondo para pantallas pequeñas */
+    }
+  
+    .container {
+      min-width: auto; /* Remueve el ancho mínimo en pantallas pequeñas */
+    }
+  
+    .container-mid {
+      flex-direction: column; /* Cambia la dirección del contenedor medio a columna */
+      align-items: center;
+      justify-content: center;
+      margin: 0;
+    }
+  
+    .container-mid-tries {
+      margin-bottom: 1rem; /* Ajusta el margen inferior para separar los elementos */
+    }
+  
+    .container-mid-mistakes {
+      margin-top: 1rem; /* Ajusta el margen superior para separar los elementos */
+    }
+  
+    .container-bottom-word {
+      width: 100%;
+      flex-wrap: wrap; /* Permite que las palabras se envuelvan en varias líneas */
+    }
+  
+    .letter-space {
+      width: 40px; /* Ajusta el ancho según sea necesario para pantallas pequeñas */
+      height: 40px; /* Ajusta la altura según sea necesario para pantallas pequeñas */
+      font-size: 1rem; /* Ajusta el tamaño de la fuente para pantallas pequeñas */
+      margin-right: 3px; /* Ajusta el espacio entre los espacios */
+    }
+  
+    .container-bottom-btn {
+      flex-direction: column; /* Cambia la dirección del contenedor de botones a columna */
+      padding: 1rem;
+    }
+  
+    .container-bottom-btn button {
+      min-width: auto; /* Remueve el ancho mínimo en pantallas pequeñas */
+      margin-bottom: 0.5rem; /* Ajusta el margen inferior para separar los botones */
+    }
+  }

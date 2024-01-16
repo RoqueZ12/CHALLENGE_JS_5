@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="styles.css" />
+    <link rel="stylesheet" href="media.css" />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700&display=swap"
+    />
+    <title>CHALLENGE_JS_5</title>
+  </head>
+  <body>
+    <div class="container">
+      <div class="container-top">
+        <h3>Word Scramble</h3>
+        <div class="container-top-ramdon_word">
+          <p id="word-random"></p>
+        </div>
+      </div>
+      <div class="container-mid">
+        <div class="container-mid-tries">
+          <p id="tries"></p>
+          <div class="container-mid-tries-radio">
+            <input class="radio-input" type="radio" ,="" name="radio" /><input
+              class="radio-input"
+              type="radio"
+              ,=""
+              name="radio"
+            /><input class="radio-input" type="radio" ,="" name="radio" /><input
+              class="radio-input"
+              type="radio"
+              ,=""
+              name="radio"
+            /><input class="radio-input" type="radio" ,="" name="radio" />
+          </div>
+        </div>
+        <div class="container-mid-mistakes">
+          <p>Mistakes:</p>
+          <div class="container-mid-mistakes-words">
+            <p id="word-wrong"></p>
+          </div>
+        </div>
+      </div>
+      <div class="container-bottom">
+        <div class="container-bottom-word">
+          <div id="cuadrados-container"></div>
+        </div>
+        <div class="container-bottom-btn">
+          <div class="container-bottom-btn-shadow">
+            <button id="random">Random</button>
+          </div>
+          <div class="container-bottom-btn-shadow">
+            <button id="reset">Reset</button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="guess.js"></script>
+  </body>
+</html>
